@@ -1,8 +1,3 @@
-<%-- 
-    Document   : links
-    Created on : 29-Oct-2009, 14:37:43
-    Author     : WillAtterson
---%>
 
 <div id="main">
     <h2>Further Information</h2>
