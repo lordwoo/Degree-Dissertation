@@ -1,3 +1,6 @@
+Note:
+A manual for the application framework is currently being written, including future improvements and known issues.
+
 Degree-Dissertation
 ===================
 
