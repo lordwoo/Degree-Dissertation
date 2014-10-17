@@ -1,0 +1,10 @@
+<%-- Footer, goes at bottom of each page. --%>
+
+            <div id="footer">
+                <hr />
+                <p>Site developed by Will Atterson @ University of East Anglia</p>
+            </div> <!-- footer -->
+        </div> <!-- container -->
+    </body>
+</html>
+

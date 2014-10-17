@@ -1,0 +1,50 @@
+<%-- Header, goes at top of each page. --%>
+
+<%@page contentType="text/html; charset=UTF-8" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="author" content="Will Atterson" />
+        <meta name="description" content="Find out about osteoporosis and assess your risk of developing the disease." />
+        <meta charset="UTF-8" />
+        <link href="/OsteoporosisProj/css/global.css" rel="stylesheet" type="text/css" />
+        <title>Osteoporosis Risk Assessment</title>
+    </head>
+    <body <c:if test="${not empty fontSize}">style="font-size: ${fontSize};"</c:if>>
+        <div id="topbar">
+             <c:if test="${not empty username}">
+                    <div id="userbar">
+                        <p>You are logged in as <strong>${username}</strong> | <a href="<c:url value="/pages/logout" />">Logout</a></p>
+                    </div> <!-- userbar -->
+             </c:if>
+            <div id="textsize">
+                Text size:
+                <ul>
+                    <li <c:if test="${fontSize == '80%' || empty fontSize}">class="current"</c:if>><a class="smalltext" href="<c:url value="?fontSize=80&amp;${pageContext.request.queryString}" />" title="Small text">A</a></li>
+                    <li <c:if test="${fontSize == '100%'}">class="current"</c:if>><a class="mediumtext" href="<c:url value="?fontSize=100&amp;${pageContext.request.queryString}" />" title="Medium text">A</a></li>
+                    <li <c:if test="${fontSize == '120%'}">class="current"</c:if>><a class="largetext" href="<c:url value="?fontSize=120&amp;${pageContext.request.queryString}" />" title="Large text">A</a></li>
+                </ul>
+            </div> <!-- textsize -->
+        </div> <!-- topbar -->
+        <div id="container">
+            <div id="banner">
+                <img src="/OsteoporosisProj/images/banner.jpg" alt="Osteoporosis Risk Assessment" />
+            </div> <!-- banner -->
+            <div id="navbar">
+                <ul>
+                    <c:set var="servletPath" value="${pageContext.request.servletPath}" scope="page" />
+                    <li <c:if test="${servletPath == '/WEB-INF/view/welcome.jsp'}">class="current"</c:if>><a href="<c:url value="/" />">Home</a></li>
+                    <li <c:if test="${servletPath == '/WEB-INF/view/osteoporosis.jsp'}">class="current"</c:if>><a href="<c:url value="/pages/osteoporosis" />">About osteoporosis</a></li>
+                    <li <c:if test="${servletPath == '/WEB-INF/view/questionnaire.jsp'}">class="current"</c:if>><a href="<c:url value="/pages/questionnaire" />">Assess your risk</a></li>
+                    <c:if test="${not empty patient}"><li <c:if test="${servletPath == '/WEB-INF/view/results.jsp'}">class="current"</c:if>><a href="<c:url value="/pages/results" />">Results</a></li></c:if>
+                    <li <c:if test="${servletPath == '/WEB-INF/view/links.jsp'}">class="current"</c:if>><a href="<c:url value="/pages/links" />">Further information</a></li>
+                    <c:if test="${empty username}">
+                        <li <c:if test="${servletPath == '/WEB-INF/view/register.jsp'}">class="current"</c:if>><a href="<c:url value="/pages/register" />">Register</a></li>
+                        <li <c:if test="${servletPath == '/WEB-INF/view/login.jsp'}">class="current"</c:if>><a href="<c:url value="/pages/login" />">Login</a></li>
+                    </c:if>
+                </ul>
+            </div> <!-- navbar -->
+            

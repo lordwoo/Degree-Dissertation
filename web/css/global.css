@@ -1,0 +1,350 @@
+
+root 
+{ 
+    display: block;
+}
+
+body
+{    
+    background-color: #F0F8FF;
+    font-family: verdana, arial;
+    font-size: 80%;
+    min-width: 900px; /* Same as #container width to avoid browser problems */
+    text-align: center; /* Centers #container in IE */
+}
+
+h1, h2, h3
+{
+    font-family: arial;
+}
+
+h3
+{
+    padding-top: 10px;
+}
+
+#container
+{
+    background-color: white;
+    border: 1px solid black;
+    clear: both;
+    margin: auto; /* Centers #container in FireFox */
+    text-align: left;
+    width: 900px;
+}
+
+#topbar
+{
+    margin: auto;
+    padding-bottom: 30px;
+    padding-top: 10px;
+    width: 900px;
+}
+
+#topbar #userbar
+{
+    float: left;
+}
+
+#topbar #userbar p
+{
+    display: inline; /* Aligns userbar with textsize bar */
+}
+
+#topbar #textsize
+{
+    float: right;
+    margin-bottom: 10px; /* Prevents buttons overlapping banner when text size is increased. */
+}
+
+#topbar #textsize ul
+{
+    display: inline;
+    list-style: none;
+    padding: 0; /* This probably isn't needed, but it tucks the element in.*/
+}
+
+#topbar #textsize li
+{
+    background-color: #B0C4DE;
+    border: 1px solid #0D1761;
+    display: inline;
+    padding: 6px 0;
+    margin: 0;
+}
+
+#topbar #textsize li:hover
+{
+    background-color: #0D1761;
+}
+
+#topbar #textsize li:hover a
+{
+    color: white;
+}
+
+#topbar #textsize li.current
+{
+    background-color: #0D1761; /* Background color of the current page's button. */
+}
+
+#topbar #textsize li.current a
+{
+    color: white; /* Text color of the current page's button. */
+}
+
+#topbar #textsize a
+{
+    color: black;
+    display: inline;
+    font-weight: bold;
+    padding: 6px 8px; /* This causes problems in IE compatibility view. */
+    text-decoration: none;
+}
+
+#topbar #textsize a.smalltext
+{
+    font-size: 100%;
+}
+
+#topbar #textsize a.mediumtext
+{
+    font-size: 120%;
+}
+
+#topbar #textsize a.largetext
+{
+    font-size: 140%;
+}
+
+#banner
+{
+    background-color: #0D1761;
+    color: white;
+    font-size: 200%;
+    font-weight: bold;
+}
+
+#navbar
+{
+    padding: 10px;
+    text-align: center;
+}
+
+#navbar ul
+{
+    display: inline;
+    list-style: none;
+    padding: 0;
+}
+
+#navbar li
+{
+    background-color: #B0C4DE;
+    border: 1px solid #0D1761;
+    display: inline-block;
+    padding: 6px 0;
+    margin: 0 -1px 5px -1px; /* This causes problems in IE compatibility view. */
+}
+
+#navbar li:hover
+{
+    background-color: #0D1761;
+}
+
+#navbar a
+{
+    color: black;
+    display: inline;
+    font-weight: bold;
+    padding: 6px 8px; /* This causes problems in IE compatibility view. */
+    text-decoration: none;
+}
+
+#navbar li:hover a
+{
+    color: white;
+}
+
+#navbar li.current
+{
+    background-color: #0D1761; /* Background color of the current page's button. */
+}
+
+#navbar li.current a
+{
+    color: white; /* Text color of the current page's button. */
+}
+
+#sidebarleft
+{
+    float: left;
+    padding: 60px 10px 0 0;
+    width: 190px;
+}
+
+#sidebarleft a
+{
+    text-decoration: none;
+}
+
+#sidebarleft a:visited
+{
+    color: #7C00A6;
+}
+
+#sidebarleft a:hover
+{
+    color: red;
+    text-decoration: underline;
+}
+
+#sidebarleft li.current
+{
+    list-style: disc;
+}
+
+#sidebarleft ul
+{
+    list-style: none;
+}
+
+#sidebarleft li
+{
+    padding: 5px 0;
+}
+
+#sidebarright
+{
+    float: right;
+    padding: 70px 10px 0 10px;
+    text-align: center;
+    width: 180px;
+}
+
+#main
+{
+    margin: 0 100px;
+    padding: 10px;
+}
+
+#main a
+{
+    text-decoration: none;
+}
+
+#main a:visited
+{
+    color: #7C00A6;
+}
+
+#main a:hover
+{
+    color: red;
+    text-decoration: underline;
+}
+
+#questionnaire fieldset
+{
+    background-color: #F0F8FF;
+    border: 1px solid black;
+    margin: 2em auto auto auto;
+    width: 600px;
+}
+
+#questionnaire legend
+{
+    background-color: #B0C4DE;
+    border: 1px solid black;
+    font-weight: bold;
+}
+
+#questionnaire ol
+{
+    list-style-type: none;
+}
+
+#questionnaire li
+{
+    margin-top: 2em;
+}
+
+#questionnaire label.short
+{
+    display: block;
+    float: left;
+    margin-right: 0.5em;
+    width: 7em;
+}
+
+#questionnaire label.long
+{
+    display: block;
+    float: left;
+    margin-right: 0.5em;
+    width: 22em;
+}
+
+#questionnaire label.check
+{
+    display: block;
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+    width: 22em;
+}
+
+#questionnaire .check span
+{
+    display: block;
+}
+
+#questionnaire .check input
+{
+    margin-left: 7em;
+}
+
+#questionnaire .submit
+{
+    text-align: center;
+}
+
+#questionnaire .submit input
+{
+    margin-top: 2em;
+}
+
+#questionnaire .text input
+{
+    width: 3em;
+}
+
+#questionnaire span.errorMsg
+{
+    color: red;
+}
+
+.warning
+{
+    background-color: red;
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+
+.feedback
+{
+    background-color: green;
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+
+#footer
+{
+    clear: both;
+    font-size: 70%;
+    margin: 0 200px;
+    padding: 10px;
+    text-align: center;
+}
+
