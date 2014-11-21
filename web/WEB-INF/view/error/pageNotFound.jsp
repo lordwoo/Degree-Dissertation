@@ -1,8 +1,3 @@
-<%-- 
-    Document   : pageNotFound
-    Created on : 28-Apr-2011, 18:25:50
-    Author     : Will
---%>
 
 <div id="main">
     <h2>Page Not Found</h2>

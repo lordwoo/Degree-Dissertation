@@ -1,8 +1,3 @@
-<%-- 
-    Document   : results
-    Created on : 14-Dec-2009, 17:39:52
-    Author     : Will
---%>
 
 <%@page import="model.Patient" %>
 <%@page import="misc.UnitConverter" %>

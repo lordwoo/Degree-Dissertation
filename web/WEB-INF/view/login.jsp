@@ -1,8 +1,3 @@
-<%-- 
-    Document   : login
-    Created on : 24-Apr-2011, 14:20:32
-    Author     : Will
---%>
 
 <div id="main">
     <c:if test="${not empty warning}">

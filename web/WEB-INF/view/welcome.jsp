@@ -1,8 +1,3 @@
-<%--
-    Document   : osteoporosis
-    Created on : 28-Oct-2009, 11:00:00
-    Author     : WillAtterson
---%>
 
 <div id="main">
     <c:if test="${not empty feedback}">

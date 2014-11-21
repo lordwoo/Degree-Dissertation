@@ -1,8 +1,3 @@
-<%-- 
-    Document   : dataAccessError
-    Created on : 01-Sep-2014, 16:52:26
-    Author     : Will
---%>
 
 <div id="main">
     <h2>Database Error</h2>

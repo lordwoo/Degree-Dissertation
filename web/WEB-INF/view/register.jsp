@@ -1,8 +1,3 @@
-<%-- 
-    Document   : register
-    Created on : 22-Apr-2011, 18:58:01
-    Author     : Will
---%>
 
 <div id="main">
     <h2>Register</h2>

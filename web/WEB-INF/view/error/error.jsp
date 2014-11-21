@@ -1,8 +1,3 @@
-<%-- 
-    Document   : error
-    Created on : 07-Jan-2011, 17:42:14
-    Author     : Will
---%>
 
 <div id="main">
     <h2>Web Site Error</h2>

@@ -1,8 +1,4 @@
-<%-- 
-    Document   : osteoporosis
-    Created on : 29-Oct-2009, 14:15:44
-    Author     : WillAtterson
---%>
+
 <div id="sidebarleft">
     <ul>
         <li <c:if test="${param.page == 'what' || empty param.page}">class="current"</c:if>><a href="<c:url value="?page=what" />">What is Osteoporosis?</a></li>

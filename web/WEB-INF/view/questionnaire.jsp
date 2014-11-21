@@ -1,8 +1,3 @@
-<%-- 
-    Document   : questionnaire2
-    Created on : 06-Nov-2009, 11:00:48
-    Author     : WillAtterson
---%>
 
 <div id="main">
     <c:choose>
