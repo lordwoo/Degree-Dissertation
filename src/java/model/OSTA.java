@@ -2,11 +2,9 @@
 package model;
 
 /**
- * <p>
  * The Osteoporosis Self-assessment Tool for Asians is a medical pre-screening
  * tool for identifying patients who are at risk for having developed
  * osteoporosis.
- *
  * <p>
  * OSTA uses the following algorithm for risk point generation: take the
  * patient's weight in kilograms, subtract their age in years, multiply by 0.2,

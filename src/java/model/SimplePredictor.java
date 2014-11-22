@@ -2,13 +2,11 @@
 package model;
 
 /**
- * <p>
  * A base class representing the prediction mechanism of simple medical
  * pre-screening tools, such as the Osteoporosis Pre-screening Risk Assessment
  * (OPERA). This class can be extended by a concrete implementation of one of
  * these tools, implementing the {@link #riskPoints(Patient)} method with it's
  * prediction algorithm.
- *
  * <p>
  * Pre-screening tools work by first generating a point total for the patient
  * based on the values of certain risk factors, e.g. if age > 60, +3 points.

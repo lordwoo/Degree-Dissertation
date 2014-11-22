@@ -2,11 +2,9 @@
 package framework;
 
 /**
- * <p>
- * Exception throws by the
+ * Exception thrown by the
  * {@link Action#execute(HttpServletRequest, HttpServletResponse)} method in
  * user-defined circumstances.
- * 
  * <p>
  * Implements the standard exception constructors.
  */

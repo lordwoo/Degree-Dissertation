@@ -5,10 +5,8 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * <p>
  * This exception is thrown any time a {@link Predictor} has insufficient
  * patient data to make a prediction, such as a missing field or invalid value.
- * 
  * <p>
  * Implements the standard exception constructors.
  */

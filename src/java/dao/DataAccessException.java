@@ -2,7 +2,6 @@
 package dao;
 
 /**
- * <p>
  * Unchecked exception to wrap any exceptions that are thrown as a result of
  * failure to access a data source, such as {@code SQLException}, so that:
  * <ul>

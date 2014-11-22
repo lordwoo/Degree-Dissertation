@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Part of the attribute safety component, this filter simply wraps the request
  * and response objects with the attribute safe wrappers.
- *
+ * <p>
  * This filter should execute before any others to ensure that the functionality
  * in the wrappers is present for any other code that executes. As such, it
  * should be declared in the deployment descriptor above any other filters.

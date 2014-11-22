@@ -9,11 +9,9 @@ import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
 
 /**
- * <p>
  * Initialises the {@link Database} class connection parameters by grabbing the
  * appropriate context parameters from the deployment descriptor, and unregisters
  * the database driver when the application closes down.
- *
  * <p>
  * The deployment descriptor must abide by the following naming convention:
  * <ul>

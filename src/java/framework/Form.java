@@ -8,14 +8,12 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * <p>
  * Represents a web form submitted to the server. Developers can extend this
  * class with their own concrete implementation, providing a field for each
  * field of the web form, annotated with {@link FormField}. Custom validation
  * rules can be implemented by writing methods in the class and annotating them
  * with {@link Validation}. It is not necessary to write any constructors, as
  * all construction and initialisation is handled by the framework.
- *
  * <p>
  * Note that any concrete implementation should be declared {@code final}, as
  * validation will only take place on the fields in the calling class, not any

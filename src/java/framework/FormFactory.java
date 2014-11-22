@@ -5,10 +5,8 @@ import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
 
 /**
- * <p>
  * Provides a way to dynamically get a concrete {@link Form} for a given
  * request. The forms Map must be populated prior to use.
- *
  * <p>
  * The correct {@link Form} is determined by an examination of the HTTP method
  * and path info of the request. For example, an HTTP method of "GET" and a path

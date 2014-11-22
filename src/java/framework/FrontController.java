@@ -9,10 +9,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * <p>
  * Processes all requests that are sent to the application with the specified
  * URL pattern.
- *
  * <p>
  * If form data has been supplied with the request, the form validation
  * component will be invoked, and if any errors result the user will be sent

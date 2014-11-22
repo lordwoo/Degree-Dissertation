@@ -14,7 +14,6 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 /**
- * <p>
  * Checks for attempts to access restricted pages without proper authorisation,
  * and redirects the client if such an attempt is made. The following
  * redirections take place:

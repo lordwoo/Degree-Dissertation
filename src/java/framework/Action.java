@@ -5,9 +5,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * <p>
  * Represents an action (a use case) that a user may initiate within the system.
- *
  * <p>
  * Developers can implement this interface to create a concrete action class.
  * The code for the action is placed within the
