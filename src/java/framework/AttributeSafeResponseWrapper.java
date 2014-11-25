@@ -11,7 +11,7 @@ import javax.servlet.http.HttpSession;
 
 /**
  * Part of the attribute safety component, this wrapper adds functionality to
- * the {@code sendRedirect(String)} method. When the method is called, if any
+ * the {@code sendRedirect()} method. When the method is called, if any
  * request attributes are found, they will be added to a {@code List} called
  * "requestAtts" and stuffed into the session, so that they will survive the
  * loss of the request object when the redirect occurs.

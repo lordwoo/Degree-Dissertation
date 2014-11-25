@@ -5,7 +5,7 @@ package model;
  * A base class representing the prediction mechanism of simple medical
  * pre-screening tools, such as the Osteoporosis Pre-screening Risk Assessment
  * (OPERA). This class can be extended by a concrete implementation of one of
- * these tools, implementing the {@link #riskPoints(Patient)} method with it's
+ * these tools, implementing the {@code riskPoints()} method with it's
  * prediction algorithm.
  * <p>
  * Pre-screening tools work by first generating a point total for the patient
@@ -26,11 +26,17 @@ public abstract class SimplePredictor implements Predictor
         this.cutpoint = cutpoint;
     }
 
+    /**
+     * @return the cutpoint for this tool
+     */
     public int getCutpoint()
     {
         return cutpoint;
     }
 
+    /**
+     * @param cutpoint a cutpoint for this tool
+     */
     public void setCutpoint(int cutpoint)
     {
         this.cutpoint = cutpoint;
@@ -38,9 +44,9 @@ public abstract class SimplePredictor implements Predictor
 
     /**
      * Predicts whether or not a patient falls into an "at-risk" category for a
-     * condition by calling the {@link #riskPoints(Patient)} method and
-     * comparing the result to the cutpoint: if the result >= the cutpoint, the
-     * patient is considered at-risk.
+     * condition by calling the {@code riskPoints()} method and comparing the
+     * result to the cutpoint: if the result >= the cutpoint, the patient is
+     * considered at-risk.
      *
      * @param patient the patient data
      * @return the risk prediction, true if the patient is "at-risk", false

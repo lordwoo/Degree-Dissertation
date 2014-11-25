@@ -50,7 +50,8 @@ public class ActionFactory
             catch (IllegalAccessException | InstantiationException e)
             {
                 // These exceptions indicate a programming error
-                throw new RuntimeException("Action instantiation failed for class: " + actionClass.getSimpleName(), e);
+                throw new RuntimeException("Action instantiation failed for class: "
+                        + actionClass.getSimpleName(), e);
             }
         }
 

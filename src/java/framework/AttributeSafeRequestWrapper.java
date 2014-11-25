@@ -9,7 +9,7 @@ import javax.servlet.http.HttpSession;
 
 /**
  * Part of the attribute safety component, this wrapper adds functionality to
- * the {@code getRequestDispatcher(String)} method. When the method is called,
+ * the {@code getRequestDispatcher()} method. When the method is called,
  * if any request attributes are found in the session in a {@code List}
  * attribute called "requestAtts", they will be stripped out and stuffed back
  * into the request, so that they are available for the view that the request

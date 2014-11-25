@@ -8,8 +8,7 @@ import java.sql.SQLException;
 
 /**
  * A utility class for connecting to a database. The connection parameters
- * should be injected via the {@link #init(String, String, String, String)}
- * method prior to use.
+ * should be injected via the {@code init()} method prior to use.
  */
 public class Database
 {
@@ -28,8 +27,8 @@ public class Database
      *
      * @param className the name of the JDBC driver class
      * @param URL the URL of the database
-     * @param username the username to use when connecting
-     * @param password the password to use when connecting
+     * @param username the username for guest connections
+     * @param password the password for guest connections
      * @throws ClassNotFoundException if the JDBC driver cannot be found
      */
     public static void init(String className, String URL, String username, String password)

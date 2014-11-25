@@ -16,7 +16,7 @@ import javax.servlet.annotation.WebListener;
 /**
  * Initialises the {@link ActionFactory} and {@link FormFactory} maps. Any new
  * actions or forms that are added to the system need a corresponding request
- * mapping entry in the {@link #contextInitialized(ServletContextEvent)} method.
+ * mapping entry in the {@code contextInitialized()} method.
  */
 @WebListener
 public class FactoryInitialiser implements ServletContextListener

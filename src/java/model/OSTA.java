@@ -40,8 +40,7 @@ public class OSTA extends SimplePredictor
     /**
      * Overrides the parent method as the risk prediction logic is slightly
      * different: patient is considered at risk if the result is equal to or
-     * <em>lower</em>
-     * than the cutpoint, rather than higher.
+     * <em>lower</em> than the cutpoint, rather than higher.
      *
      * @param patient the patient data
      * @return the risk prediction, true if the patient is "at-risk", false
