@@ -1,6 +1,6 @@
 
-<%@page import="model.Patient" %>
-<%@page import="misc.UnitConverter" %>
+<%@ page import="model.Patient" %>
+<%@ page import="misc.UnitConverter" %>
 
 <div id="main">
     <c:if test="${not empty feedback}">

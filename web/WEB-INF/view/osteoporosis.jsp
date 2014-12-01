@@ -10,19 +10,7 @@
         <li <c:if test="${param.page == 'risk'}">class="current"</c:if>><a href="<c:url value="?page=risk" />">Am I at risk?</a></li>
     </ul>
 </div>
-<div id="sidebarright">
-    <c:choose>
-        <c:when test="${param.page == 'who'}">
-            <em>
-                <q>
-                    One in two women and one in five men over the age of 50 will
-                    suffer a fracture in their lifetime, mainly as a result of osteoporosis.
-                </q>
-            </em>
-        </c:when>
-    </c:choose>
-</div>
-<div id="main" style="margin: 0 200px;"> <!-- Overwriting "margin" css to fit left sidebar -->
+<div id="main" style="margin: 0 200px;"> <!-- Overriding "margin" css to fit left sidebar -->
     <h2>About Osteoporosis</h2>
     <c:choose>
         <c:when test="${param.page == 'what' || empty param.page}">
@@ -44,12 +32,11 @@
         <c:when test="${param.page == 'effect'}">
             <h3>What are it's effects?</h3>
             <p>
-                Osteoporosis itself doesn't cause any difficulties. Rather, a person
+                Osteoporosis doesn't itself cause any difficulties. Rather, a person
                 suffering from osteoporosis has a greater chance of suffering a bone fracture
                 (a broken bone) as a result of a minor bump or fall, where a healthy person
                 would suffer no ill effects.
             </p>
-
             <p>
                 Bone fractures can occur anywhere, but the most common fractures are to the
                 hip, spine, or wrists. Hip fractures are particularly problematic, and often
@@ -94,7 +81,6 @@
                 the cells that build new bone. As a result, some people will experience an
                 increase in bone density.
             </p>
-
             <p>
                 Generally, drug treatments seem to reduce the risk of fracture by about 50%.
                 Changes in lifestyle and situation can also help to reduce the risk of
@@ -121,7 +107,6 @@
                 your doctor recommends you for a bone density scan. If you're concerned that you
                 may be at risk, make an appointment with your doctor.
             </p>
-
             <p>
                 However, a number of risk assessment questionnaires have been developed to
                 help doctors determine who is at risk and should therefore be sent for bone
@@ -130,13 +115,8 @@
                 This web site provides a questionnaire for your use, and on completion it will
                 tell you if you fall into a high risk category.
             </p>
-
             <p><a href="<c:url value="/pages/questionnaire" />">Assess your risk</a></p>
             <p><a href="<c:url value="/pages/links" />">Find out more about osteoporosis</a></p>
-
-            <!-- Add something about this information being correct at the time of writing. Some things,
-            like the 50% drug effectiveness stat, may change over time. -->
-
         </c:when>
         <c:otherwise>
             <p>
