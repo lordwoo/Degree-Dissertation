@@ -12,7 +12,7 @@ import javax.servlet.http.HttpSession;
 import model.Patient;
 
 /**
- * Service to register a user. If any patient results are available, they will
+ * Action to register a user. If any patient results are available, they will
  * be stored in the database and associated with this user.
  */
 public class Register implements Action

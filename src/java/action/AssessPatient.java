@@ -12,7 +12,7 @@ import model.OSTA;
 import model.Patient;
 
 /**
- * Service for assessing a patient's risk of having developed osteoporosis,
+ * Action for assessing a patient's risk of having developed osteoporosis,
  * called when the risk questionnaire is submitted. The results will be set to
  * the session, and if the user is logged in the results will also be added to
  * the database, overriding any that the user already has stored.

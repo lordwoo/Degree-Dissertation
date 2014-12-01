@@ -11,7 +11,7 @@ import form.LoginForm;
 import model.Patient;
 
 /**
- * Service for logging a user in to the system. Any existing patient results are
+ * Action for logging a user in to the system. Any existing patient results are
  * removed from the session, and any results that the user already has in the
  * database will be retrieved and added to the session.
  */

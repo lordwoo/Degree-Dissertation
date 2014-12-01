@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 /**
- * Service to log a user out of the system. Any patient results will be removed
+ * Action to log a user out of the system. Any patient results will be removed
  * from the session.
  */
 public class Logout implements Action
