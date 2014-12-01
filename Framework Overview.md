@@ -1,4 +1,5 @@
 Framework Overview
+==================
 
 What follows is a typical request/response cycle for my web application. I recommend you open the SequenceDiagram.jpg file, found in the root app directory, as it provides a visual representation of this description.
 

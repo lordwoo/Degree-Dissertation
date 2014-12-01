@@ -1,3 +1,6 @@
+-- This file can be used to setup the database tables for the application.
+-- SQL statements were written for PostgreSQL DMBS, and may not function correctly
+-- on other DBMS'.
 
 -- DROP TABLE patient;
 -- DROP TABLE "user";
